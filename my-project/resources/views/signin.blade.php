@@ -27,7 +27,7 @@
         <button type="submit" name="send">Enviar</button>
     </div>
     <div>
-        <!-- <a href="index.html"> Crear usuari </a> -->
+     <a href="{{ route('signup', ['valor1' => 'Creació', 'valor2' => 'd\'usuari', 'valor3' => 'nou']) }}">Crear usuari</a>
     </div>
     </form>
 </body>

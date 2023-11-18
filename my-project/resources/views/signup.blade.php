@@ -45,7 +45,7 @@
         </div>
     </form>
     <div>
-        <!-- <a href="login.html"> Iniciar sessió usuari </a> -->
+    <a href="{{ route('signin', ['valor1' => 'Iniciar', 'valor2' => 'sessió', 'valor3' => 'de', 'valor4' => 'l\'usuari']) }}">Iniciar sessió</a> <!-- envio uns valors predeterminats ja que l'enrutament requereix del nº de paràmetres esperats en aquest cas-->
 
     </div>
 </body>

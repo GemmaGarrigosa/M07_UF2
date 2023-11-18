@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class SignController extends Controller
 {
-    public function signin($valor1,$valor2,$valor3,$valor4){
+    public function signin($valor1,$valor2,$valor3,$valor4){ //els paràmetres rebuts per la funció és el que escriu l'usuari en la URL
 
-        $titolFinal = $valor1.' '.$valor2.' '.$valor3.' '.$valor4;
-        return view('signin')-> with('titolFinal', $titolFinal);
+        $titolFinal = $valor1.' '.$valor2.' '.$valor3.' '.$valor4; //contruïm la string que voldrem rebre en el <h1> de la vista
+        return view('signin')-> with('titolFinal', $titolFinal); // retornem la view amb la variable de la string
     }
 
     public function signup($valor1,$valor2,$valor3){
