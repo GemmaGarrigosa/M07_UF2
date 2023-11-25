@@ -9,8 +9,9 @@
 </head>
 <body>
 
-    <h1> {{$titolFinal}}</h1>
-    <!-- <form action="usuari.php" method="POST"> obrim formulari i passem el mètoda donat, post perque estem fent ús de dades sensibles -->
+    
+    <form action="{{route('admin_view')}}" method="POST">
+        @csrf
     <div>
         <label>Email</label>
         <input type="text" name="email" placeholder="Introdueix el teu e-mail" required>
@@ -27,7 +28,7 @@
         <button type="submit" name="send">Enviar</button>
     </div>
     <div>
-     <a href="{{ route('signup', ['valor1' => 'Creació', 'valor2' => 'd\'usuari', 'valor3' => 'nou']) }}">Crear usuari</a>
+     <a href="{{ route('signup')}}">Crear usuari</a>
     </div>
     </form>
 </body>

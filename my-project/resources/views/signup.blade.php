@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- <form action="index.php" method="POST"> -->
-        <h1>{{$titolFinal}}</h1>
+        <!-- <h1>{{$titolFinal}}</h1> -->
         <div>
             <label>ID</label>
             <input type="text" name="id">
@@ -45,7 +45,7 @@
         </div>
     </form>
     <div>
-    <a href="{{ route('signin', ['valor1' => 'Iniciar', 'valor2' => 'sessió', 'valor3' => 'de', 'valor4' => 'l\'usuari']) }}">Iniciar sessió</a> <!-- envio uns valors predeterminats ja que l'enrutament requereix del nº de paràmetres esperats en aquest cas-->
+    <a href="{{ route('signin')}}">Iniciar sessió</a> <!-- envio uns valors predeterminats ja que l'enrutament requereix del nº de paràmetres esperats en aquest cas-->
 
     </div>
 </body>
