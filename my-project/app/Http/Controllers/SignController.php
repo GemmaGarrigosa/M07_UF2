@@ -17,4 +17,14 @@ class SignController extends Controller
         $titolFinal = $valor1.' '.$valor2.' '.$valor3;
         return view('signup')-> with('titolFinal',$titolFinal);
     }
+
+
+    public function signin2(){ 
+        return view('signin');
+    }
+
+    public function signup2(){
+        return view('signup');
+    }
+
 }
