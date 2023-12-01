@@ -25,6 +25,6 @@
         </tr>
         @endforeach
     </table>
-    <a href="{{ route('admin_view')}}">Admin Vista </a>
+    <a href="{{ route('admin_view')}}">ADMIN VISTA </a>
 </body>
 </html>
